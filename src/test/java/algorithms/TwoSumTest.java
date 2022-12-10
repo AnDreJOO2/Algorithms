@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class TwoSumTest {
 
-    private static TwoSum twoSum;
+    private TwoSum twoSum;
 
     @BeforeEach
     void setUp() {
@@ -17,7 +17,7 @@ class TwoSumTest {
 
 
     @Test
-    void should_pass_the_test() {
+    void twoSum_should_pass_the_test() {
 
         // test1
         int[] array1 = new int[]{2, 7, 11, 15};
