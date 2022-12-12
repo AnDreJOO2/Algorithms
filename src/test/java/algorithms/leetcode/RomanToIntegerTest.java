@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.leetcode;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,7 @@ class RomanToIntegerTest {
     private RomanToInteger romanToInteger;
 
     @BeforeEach
-    void setUp(){
+    void setUp() {
         romanToInteger = new RomanToInteger();
     }
 

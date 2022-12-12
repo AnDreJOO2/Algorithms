@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.leetcode;
 
 /**
  * @link <a href="https://leetcode.com/problems/palindrome-number/">https://leetcode.com/problems/palindrome-number/</a>
