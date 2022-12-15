@@ -15,10 +15,15 @@ class ContainsDuplicateTest {
     }
 
     @Test
-    void containsDuplicate() {
+    void containsDuplicateShouldReturnTrue() {
 
         assertThat(containsDuplicate.containsDuplicate(new int[]{1, 2, 3, 1})).isTrue();
-        assertThat(containsDuplicate.containsDuplicate(new int[]{1, 2, 3, 4})).isFalse();
         assertThat(containsDuplicate.containsDuplicate(new int[]{1, 1, 1, 3, 3, 4, 3, 2, 4, 2})).isTrue();
+    }
+
+    @Test
+    void containsDuplicateShouldReturnFalse() {
+
+        assertThat(containsDuplicate.containsDuplicate(new int[]{1, 2, 3, 4})).isFalse();
     }
 }

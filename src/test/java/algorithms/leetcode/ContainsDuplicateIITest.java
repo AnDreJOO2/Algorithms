@@ -15,14 +15,14 @@ class ContainsDuplicateIITest {
     }
 
     @Test
-    void containsNearbyDuplicateShouldReturnsTrue() {
+    void containsNearbyDuplicateShouldReturnTrue() {
 
         assertThat(containsDuplicateII.containsNearbyDuplicate(new int[]{1, 2, 3, 1}, 3)).isTrue();
         assertThat(containsDuplicateII.containsNearbyDuplicate(new int[]{1, 0, 1, 1}, 1)).isTrue();
     }
 
     @Test
-    void containsNearbyDuplicateShouldReturnsFalse() {
+    void containsNearbyDuplicateShouldReturnFalse() {
 
         assertThat(containsDuplicateII.containsNearbyDuplicate(new int[]{1, 2, 3, 1, 2, 3}, 2)).isFalse();
     }

@@ -15,11 +15,15 @@ class ValidParenthesesTest {
     }
 
     @Test
-    void isValid_should_pass_the_test() {
+    void isValidShouldReturnTrue() {
         assertThat(validParentheses.isValid("()")).isTrue();
         assertThat(validParentheses.isValid("()[]{}")).isTrue();
         assertThat(validParentheses.isValid("()[]{()}")).isTrue();
         assertThat(validParentheses.isValid("()[]{(()[])}")).isTrue();
+    }
+
+    @Test
+    void isValidShouldReturnFalse() {
         assertThat(validParentheses.isValid("(]")).isFalse();
         assertThat(validParentheses.isValid("{}()[()][)")).isFalse();
         assertThat(validParentheses.isValid("{}([()][)")).isFalse();

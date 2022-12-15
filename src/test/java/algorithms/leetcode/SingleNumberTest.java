@@ -15,7 +15,7 @@ class SingleNumberTest {
     }
 
     @Test
-    void singleNumber() {
+    void singleNumberShouldPassTheTest() {
 
         assertThat(singleNumber.singleNumber(new int[]{2, 2, 1})).isEqualTo(1);
         assertThat(singleNumber.singleNumber(new int[]{4, 1, 2, 1, 2})).isEqualTo(4);

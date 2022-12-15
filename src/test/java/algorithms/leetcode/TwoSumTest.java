@@ -17,7 +17,7 @@ class TwoSumTest {
 
 
     @Test
-    void twoSum_should_pass_the_test() {
+    void twoSumShouldPassTheTest() {
 
         // test1
         int[] array1 = new int[]{2, 7, 11, 15};
