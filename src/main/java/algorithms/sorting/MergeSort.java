@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.sorting;
 
 /**
  * @date 23.12.2022
@@ -82,14 +82,5 @@ public class MergeSort {
     }
 
 }
-
-
-
-
-
-
-
-
-
 
 
