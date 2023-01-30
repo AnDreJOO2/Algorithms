@@ -2,6 +2,10 @@ package algorithms.leetcode;
 
 import java.util.HashMap;
 
+/**
+ * @link <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/">https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/</a>
+ * @date 30.01.2023
+ */
 public class TwoSum2InputArrayIsSorted {
 
     public int[] twoSum(int[] numbers, int target) {

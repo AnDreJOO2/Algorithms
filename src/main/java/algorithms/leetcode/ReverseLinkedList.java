@@ -1,5 +1,9 @@
 package algorithms.leetcode;
 
+/**
+ * @link <a href="https://leetcode.com/problems/reverse-linked-list/">https://leetcode.com/problems/reverse-linked-list/</a>
+ * @date 30.01.2023
+ */
 public class ReverseLinkedList {
     public class ListNode {
         int val;

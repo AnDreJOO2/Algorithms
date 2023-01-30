@@ -1,5 +1,9 @@
 package algorithms.leetcode;
 
+/**
+ * @link <a href="https://leetcode.com/problems/arranging-coins/">https://leetcode.com/problems/arranging-coins/</a>
+ * @date 26.01.2023
+ */
 public class ArrangingCoins {
 
     public int arrangeCoins(int n) {
