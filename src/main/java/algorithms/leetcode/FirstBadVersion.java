@@ -2,7 +2,7 @@ package algorithms.leetcode;
 
 /**
  * @link <a href="https://leetcode.com/problems/first-bad-version/">https://leetcode.com/problems/first-bad-version/</a>
- * @date 31.01.2022
+ * @date 31.01.2023
  */
 public class FirstBadVersion {
     public int firstBadVersion(int n) {
