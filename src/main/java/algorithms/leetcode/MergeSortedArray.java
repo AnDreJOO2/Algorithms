@@ -19,6 +19,7 @@ public class MergeSortedArray {
             }
             i -= 1;
         }
+        // remains elements
         while (0 < m) {
             nums1[i] = nums1[m - 1];
             m -= 1;
