@@ -1,7 +1,7 @@
 package algorithms.leetcode;
 
 /**
- * @link <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">https://leetcode.com/problems/best-time-to-buy-and-sell-stock//</a>
+ * @link <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">https://leetcode.com/problems/best-time-to-buy-and-sell-stock/</a>
  * @date 15.12.2022
  */
 public class BestTimeToBuyAndSellStock {
