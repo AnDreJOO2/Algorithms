@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @link <a href="https://leetcode.com/problems/combination-sum-iii/description/">https://leetcode.com/problems/combination-sum-iii/description/</a>
+ * @link <a href="https://leetcode.com/problems/combination-sum-iii/">https://leetcode.com/problems/combination-sum-iii/</a>
  * @date 23.03.2023
  */
 public class CombinationSumIII {
