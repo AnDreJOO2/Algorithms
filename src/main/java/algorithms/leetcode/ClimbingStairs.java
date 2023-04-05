@@ -2,7 +2,7 @@ package algorithms.leetcode;
 
 /**
  * @link <a href="https://leetcode.com/problems/climbing-stairs/">https://leetcode.com/problems/climbing-stairs/</a>
- * @date 04.04.2023
+ * @date 05.04.2023
  */
 public class ClimbingStairs {
     public int climbStairsRecursion(int n) {
