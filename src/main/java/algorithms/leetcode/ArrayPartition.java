@@ -3,8 +3,8 @@ package algorithms.leetcode;
 import java.util.Arrays;
 
 /**
- * @link <a href="https://leetcode.com/problems/array-partition/description/">https://leetcode.com/problems/array-partition/description/</a>
- * @date 15.12.2022
+ * @link <a href="https://leetcode.com/problems/array-partition/">https://leetcode.com/problems/array-partition/</a>
+ * @date 15.04.2023
  */
 public class ArrayPartition {
     public int arrayPairSum(int[] nums) {
