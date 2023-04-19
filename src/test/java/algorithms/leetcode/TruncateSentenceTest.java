@@ -19,7 +19,7 @@ class TruncateSentenceTest {
         truncateSentence = new TruncateSentence();
     }
 
-    @ParameterizedTest(name = "Params: sentence=`{0}`, k=`{1}`, expected=`{4}`")
+    @ParameterizedTest(name = "Params: sentence=`{0}`, k=`{1}`, expected=`{2}`")
     @MethodSource("shouldTruncateSentenceParams")
     void shouldTruncateSentence(String sentence, int k, String expected) {
         //when
