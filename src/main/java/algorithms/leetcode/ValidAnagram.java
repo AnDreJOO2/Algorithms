@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * @link <a href="https://leetcode.com/problems/valid-anagram/">https://leetcode.com/problems/valid-anagram/</a>
  * @date 22.12.2022
+ * @update 24.04.2023 - isAnagramTwo
  */
 public class ValidAnagram {
 
