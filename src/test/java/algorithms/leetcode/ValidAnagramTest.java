@@ -1,9 +1,14 @@
 package algorithms.leetcode;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 class ValidAnagramTest {
 
@@ -15,19 +20,67 @@ class ValidAnagramTest {
         validAnagram = new ValidAnagram();
     }
 
-    @Test
-    void isAnagramShouldReturnTrue() {
-
-        assertThat(validAnagram.isAnagram("anagram", "nagaram")).isTrue();
-        assertThat(validAnagram.isAnagram("ab", "ba")).isTrue();
-        assertThat(validAnagram.isAnagram("aab", "aba")).isTrue();
+    @ParameterizedTest(name = "Params: s=`{0}`, t=`{1}`, expected=`{2}`")
+    @MethodSource("IfAnagramTestReturnsShouldReturnTrueParams")
+    void shouldTestIfIsAnagramReturnsTrue(String s, String t, boolean expected) {
+        //when
+        boolean result = validAnagram.isAnagram(s, t);
+        //then
+        assertThat(result)
+                .isNotNull()
+                .isTrue()
+                .isEqualTo(expected);
     }
 
-    @Test
-    void isAnagramShouldReturnFalse() {
+    @ParameterizedTest(name = "Params: s=`{0}`, t=`{1}`, expected=`{2}`")
+    @MethodSource("IfAnagramTestReturnsShouldReturnTrueParams")
+    void shouldTestIfIsAnagramTwoReturnsTrue(String s, String t, boolean expected) {
+        //when
+        boolean result = validAnagram.isAnagramTwo(s, t);
+        //then
+        assertThat(result)
+                .isNotNull()
+                .isTrue()
+                .isEqualTo(expected);
+    }
 
-        assertThat(validAnagram.isAnagram("aa", "bb")).isFalse();
-        assertThat(validAnagram.isAnagram("abba", "abb")).isFalse();
-        assertThat(validAnagram.isAnagram("rat", "cat")).isFalse();
+    @ParameterizedTest(name = "Params: s=`{0}`, t=`{1}`, expected=`{2}`")
+    @MethodSource("IfAnagramTestReturnsShouldReturnFalseParams")
+    void shouldTestIfIsAnagramReturnsFalse(String s, String t, boolean expected) {
+        //when
+        boolean result = validAnagram.isAnagram(s, t);
+        //then
+        assertThat(result)
+                .isNotNull()
+                .isFalse()
+                .isEqualTo(expected);
+    }
+
+    @ParameterizedTest(name = "Params: s=`{0}`, t=`{1}`, expected=`{2}`")
+    @MethodSource("IfAnagramTestReturnsShouldReturnFalseParams")
+    void shouldTestIfIsAnagramTwoReturnsFalse(String s, String t, boolean expected) {
+        //when
+        boolean result = validAnagram.isAnagramTwo(s, t);
+        //then
+        assertThat(result)
+                .isNotNull()
+                .isFalse()
+                .isEqualTo(expected);
+    }
+
+    static Stream<Arguments> IfAnagramTestReturnsShouldReturnTrueParams() {
+        return Stream.of(
+                arguments("anagram", "nagaram", true),
+                arguments("ab", "ba", true),
+                arguments("aab", "aba", true)
+        );
+    }
+
+    static Stream<Arguments> IfAnagramTestReturnsShouldReturnFalseParams() {
+        return Stream.of(
+                arguments("aa", "bb", false),
+                arguments("abba", "abb", false),
+                arguments("rat", "cat", false)
+        );
     }
 }

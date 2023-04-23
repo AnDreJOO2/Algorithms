@@ -30,4 +30,22 @@ public class ValidAnagram {
         return true;
     }
 
+    // Better solution
+    public boolean isAnagramTwo(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+        char[] s_chars = new char[128];
+        for (char ch : s.toCharArray()) {
+            s_chars[ch]++;
+        }
+        for (char ch : t.toCharArray()) {
+            if (s_chars[ch] == 0) {
+                return false;
+            }
+            s_chars[ch]--;
+        }
+        return true;
+    }
+
 }
