@@ -19,7 +19,7 @@ class MaxAreaOfIslandTest {
         maxAreaOfIsland = new MaxAreaOfIsland();
     }
 
-    @ParameterizedTest(name = "Params: grid  =`{0}`, expected=`{1}`")
+    @ParameterizedTest(name = "Params: grid=`{0}`, expected=`{1}`")
     @MethodSource("shouldCalculateMaxAreaOfIslandParams")
     void shouldCalculateMaxAreaOfIsland(int[][] grid, int expected) {
         //when
