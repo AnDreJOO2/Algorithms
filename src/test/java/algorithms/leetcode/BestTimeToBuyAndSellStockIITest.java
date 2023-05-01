@@ -20,7 +20,7 @@ class BestTimeToBuyAndSellStockIITest {
     }
 
     @ParameterizedTest(name = "Params: prices=`{0}`, expected=`{1}`")
-    @MethodSource("shouldCalculateMaximumProfitBestTimeToBuyAndSellStockIIParms")
+    @MethodSource("shouldCalculateMaximumProfitBestTimeToBuyAndSellStockIIParams")
     void shouldCalculateMaximumProfitBestTimeToBuyAndSellStockII(int[] prices, int expected) {
         //when
         int result = bestTimeToBuyAndSellStockII.maxProfit(prices);
@@ -31,7 +31,7 @@ class BestTimeToBuyAndSellStockIITest {
     }
 
 
-    static Stream<Arguments> shouldCalculateMaximumProfitBestTimeToBuyAndSellStockIIParms() {
+    static Stream<Arguments> shouldCalculateMaximumProfitBestTimeToBuyAndSellStockIIParams() {
         return Stream.of(
                 arguments(new int[]{7, 1, 5, 3, 6, 4}, 7),
                 arguments(new int[]{1, 2, 3, 4, 5}, 4),
