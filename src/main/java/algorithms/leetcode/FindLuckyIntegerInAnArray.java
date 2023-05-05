@@ -18,8 +18,4 @@ public class FindLuckyIntegerInAnArray {
         }
         return max == 0 ? -1 : max;
     }
-
-    public void main(String[] args) {
-        System.out.println(findLucky(new int[]{2, 2, 2, 3, 3}));
-    }
 }
