@@ -9,9 +9,6 @@ public class ANumberAfterADoubleReversal {
         if (num == 0) {
             return true;
         }
-        while (num > 9) {
-            num %= 10;
-        }
-        return num != 0;
+        return (num %= 10) != 0;
     }
 }
