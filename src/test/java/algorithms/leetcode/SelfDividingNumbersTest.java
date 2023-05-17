@@ -21,8 +21,8 @@ class SelfDividingNumbersTest {
     }
 
     @ParameterizedTest(name = "Params: left=`{0}`, left=`{1}`, expected=`{2}`")
-    @MethodSource("shouldCountWrongHeightsPositionsParams")
-    void shouldCountWrongHeightsPositions(int left, int right, List<Integer> expected) {
+    @MethodSource("shouldFindSelfDividingNumbersParams")
+    void shouldFindSelfDividingNumbers(int left, int right, List<Integer> expected) {
         //when
         List<Integer> result = selfDividingNumbers.selfDividingNumbers(left, right);
         //then
@@ -34,7 +34,7 @@ class SelfDividingNumbersTest {
     }
 
 
-    static Stream<Arguments> shouldCountWrongHeightsPositionsParams() {
+    static Stream<Arguments> shouldFindSelfDividingNumbersParams() {
         return Stream.of(
                 arguments(1, 22, List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22)),
                 arguments(47, 85, List.of(48, 55, 66, 77))
