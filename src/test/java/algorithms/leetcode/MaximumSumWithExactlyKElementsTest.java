@@ -21,7 +21,7 @@ class MaximumSumWithExactlyKElementsTest {
 
     @ParameterizedTest(name = "Params: nums=`{0}`, k=`{1}`, expected=`{2}`")
     @MethodSource("shouldCalculateMaximumSumWithExactlyKElementsParams")
-    void shouldFindFirstPalindromicStringInTheArray(int[] nums, int k, int expected) {
+    void shouldCalculateMaximumSumWithExactlyKElements(int[] nums, int k, int expected) {
         //when
         int result = maximumSumWithExactlyKElements.maximizeSum(nums, k);
         //then
