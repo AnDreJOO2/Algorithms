@@ -4,6 +4,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @link <a href="https://leetcode.com/problems/destination-city/">https://leetcode.com/problems/destination-city/</a>
+ * @date 15.08.2023
+ */
 public class DestinationCity {
     public String destCity(List<List<String>> paths) {
 
