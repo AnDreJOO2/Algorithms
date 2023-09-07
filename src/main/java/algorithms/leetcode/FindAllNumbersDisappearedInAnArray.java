@@ -12,8 +12,8 @@ public class FindAllNumbersDisappearedInAnArray {
         List<Integer> numbers = new ArrayList<>();
         boolean[] checked = new boolean[nums.length + 1];
 
-        for (int i = 0; i < nums.length; i++) {
-            checked[nums[i]] = true;
+        for (int num : nums) {
+            checked[num] = true;
         }
         for (int i = 1; i <= nums.length; i++) {
             if (!checked[i]) {
